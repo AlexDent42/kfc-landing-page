@@ -38,3 +38,13 @@ next.addEventListener('click', function(){
 })
 
 
+//Toggle 
+
+
+let menuToggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+
+menuToggle.addEventListener('click', function(){
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+} )
