@@ -12,6 +12,7 @@
     --white-color:#fff;
     --gradient-color-dark:#d10a20;
     --gradient-color-light:#f0483a;
+    --btn-text-color:#333;
 }
 
 
@@ -19,6 +20,11 @@
     position: relative;
     min-height: 100vh;
     background: radial-gradient(var(--gradient-color-light), var(--gradient-color-dark));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 100px;
 }
 
 header {
@@ -50,4 +56,69 @@ header {
     color: var(--white-color);
     text-decoration: none;
     margin-left: 40px;
+}
+
+.content {
+    position: relative;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.content .text {
+    width: 100%;
+    max-width: 600px;
+}
+
+.content .text h2 {
+    color: var(--white-color);
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.content .text h2 span {
+    font-weight: 700;
+}
+
+.content .text p {
+    color: var(--white-color);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: var(--white-color);
+    color: var(--btn-text-color);
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    letter-spacing: 1px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .slides {
+    display: none;
+}
+
+.slider .slides.active {
+    display: block;
+}
+
+.slider .slides img {
+    width: 100%;
+    max-width: 600px;
 }
