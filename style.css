@@ -1,9 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin:0;
     padding: 0;
     box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+    
 }
 
 :root {
     --white-color:#fff;
+    --gradient-color-dark:#d10a20;
+    --gradient-color-light:#f0483a;
+}
+
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(var(--gradient-color-light), var(--gradient-color-dark));
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    position: relative;
+    color: var(--white-color);
+    text-decoration: none;
+    margin-left: 40px;
 }
